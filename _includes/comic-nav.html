@@ -17,7 +17,7 @@
 <ul class="comic_nav">
 	<li class="comic_nav_item first">
 		{% if site.categories.comics.last.url != page.url %}
-		<a class="comic_nav_item_first" href="{{site.categories.comics.last.url}}">
+		<a class="comic_nav_item_first" href="{{ site.baseurl }}{{site.categories.comics.last.url}}">
 			First
 		</a>
 		{% else %}
@@ -29,7 +29,7 @@
 
 	<li class="comic_nav_item prev">
 		{% if prev_post %}
-		<a class="comic_nav_item_prev" href="{{prev_post}}">
+		<a class="comic_nav_item_prev" href="{{ site.baseurl }}{{prev_post}}">
 			Previous
 		</a>
 		{% else %}
@@ -41,7 +41,7 @@
 
 	<li class="comic_nav_item next">
 		{% if next_post %}
-		<a class="comic_nav_item_next" href="{{next_post}}">Next</a>
+		<a class="comic_nav_item_next" href="{{ site.baseurl }}{{next_post}}">Next</a>
 		{% else %}
 		<span class="comic_nav_item_next">Next</span>
 		{% endif %}
@@ -49,7 +49,7 @@
 
 	<li class="comic_nav_item last">
 		{% if site.categories.comics.first.url != page.url %}
-		<a class="comic_nav_item_last" href="{{site.categories.comics.first.url}}">
+		<a class="comic_nav_item_last" href="{{ site.baseurl }}{{site.categories.comics.first.url}}">
 			Last
 		</a>
 		{% else %}
