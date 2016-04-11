@@ -8,8 +8,8 @@
 	  		<a href="{{page.next.url}}">
 			{% endif %}
 				<picture>
-					<source  srcset="{{page.image}} 1x, {{page.image2x}} 2x">
-					<img  class="comic_content" src="{{page.image}}" alt="{{page.title}}">
+					<source  srcset="{{ site.baseurl }}{{page.image}} 1x, {{ site.baseurl }}{{page.image2x}} 2x">
+					<img  class="comic_content" src="{{ site.baseurl }}{{page.image}}" alt="{{page.title}}">
 				</picture>
 			{% if page.next.url %}
 				</a>

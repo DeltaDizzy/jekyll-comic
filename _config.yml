@@ -10,8 +10,7 @@ title: Jekyll Comic
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   a jekyll website starter template for creating webcomics
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "http://sfrisk.github.io/jekyll-comic/"
 twitter_username: sarahfrisk
 github_username:  sfrisk
 
