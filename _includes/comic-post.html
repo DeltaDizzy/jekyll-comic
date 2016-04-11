@@ -1,0 +1,30 @@
+<article itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="comic">
+	{% include comic-nav.html %}
+	<div class="comic_wrapper">
+		<div class="comic_copyright">
+	  	{% if page.next.url %}
+	  		<a href="{{page.next.url}}">
+			{% endif %}
+				<picture>
+					<source  srcset="{{page.image}} 1x, {{page.image2x}} 2x">
+					<img  class="comic_content" src="{{page.image}}" alt="{{page.title}}">
+				</picture>
+			{% if page.next.url %}
+				</a>
+			{% endif %}
+		</div>
+	</div>
+  {% include comic-nav.html %}
+</div>
+
+	<header class="post-header">
+		<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+		<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+	</header>
+
+	<div class="post-content" itemprop="articleBody">
+		{{ content }}
+	</div>
+</article>
