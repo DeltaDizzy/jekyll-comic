@@ -31,14 +31,33 @@
 		overflow-y: hidden;
 	}
 
-	&_copyright {
+	&_content {
 		max-width: 100%;
 		min-width: 750px;
+		&-wide {
+			max-width: 100%;
+			min-width: 2360px;
+			@media screen and (min-width: 767px) {
+				min-width: 750px;
+			}
+		}
 	}
 
-	&_content {
+	&_image {
 		width: 100%;
 		height: auto;
-		margin-bottom: -11.333333333333333%;
+		&-copyright {
+			width: 100%;
+			height: auto;
+			margin-bottom: -11.333333333333333%;
+			&-wide {
+				width: 100%;
+				height: auto;
+				margin-bottom: -5.1%;
+				@media screen and (min-width: 767px) {
+					margin-bottom: -11.333333333333333%;
+				}
+			}
+		}
 	}
 }

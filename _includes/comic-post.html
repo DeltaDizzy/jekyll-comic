@@ -3,13 +3,13 @@
 <div class="comic">
 	{% include comic-nav.html %}
 	<div class="comic_wrapper">
-		<div class="comic_copyright">
+		<div class="comic_content{% if page.imageMobile %}-wide{% endif %}">
 	  	{% if page.next.url %}
 	  		<a href="{{page.next.url}}">
 			{% endif %}
 				<picture>
-					<source  srcset="{{ site.baseurl }}{{page.image}} 1x, {{ site.baseurl }}{{page.image2x}} 2x">
-					<img  class="comic_content" src="{{ site.baseurl }}{{page.image}}" alt="{{page.title}}">
+					<source {% if page.imageMobile %} media="(min-width: 767px)" {% endif %} srcset="{{ site.baseurl }}{{page.image}} 1x, {{ site.baseurl }}{{page.image2x}} 2x">
+					<img  class="comic_image{% if page.copyright %}-copyright{% endif %}{% if page.imageMobile %}-wide{% endif %}" src="{{ site.baseurl }}{% if page.imageMobile %}{{page.imageMobile}}{% else if %}{{page.image}}{% endif %}" alt="{{page.title}}">
 				</picture>
 			{% if page.next.url %}
 				</a>
