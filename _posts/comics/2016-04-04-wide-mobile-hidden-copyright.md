@@ -1,7 +1,7 @@
 ---
 layout: comic
 title:  "Wide Mobile Demo, Hidden Copyright"
-date:   2016-04-10 13:31:05 -0400
+date:   2016-04-04 13:31:05 -0400
 categories: comics
 image: "/images/comics/2016-04-04-wide-mobile-hidden-copyright.jpg"
 image2x: "/images/comics/2016-04-04-wide-mobile-hidden-copyright-2x.jpg"

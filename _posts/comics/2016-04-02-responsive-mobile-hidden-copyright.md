@@ -1,7 +1,7 @@
 ---
 layout: comic
 title:  "Responsive Demo, Hidden Copyright"
-date:   2016-04-10 13:31:05 -0400
+date:   2016-04-02 13:31:05 -0400
 categories: comics
 image: "/images/comics/2016-04-02-responsive-mobile-hidden-copyright.jpg"
 image2x: "/images/comics/2016-04-02-responsive-mobile-hidden-copyright-2x.jpg"
