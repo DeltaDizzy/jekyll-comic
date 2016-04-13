@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  {% assign page = site.posts.first %}
+  {% assign page = site.categories.comics.first %}
   {% assign content = page.content %}
   {% include comic-post.html %}
 </div>
