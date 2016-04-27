@@ -7,5 +7,5 @@ permalink: /about/
 This is the base Jekyll Comic theme.
 
 You can find the source code for Jekyll Comic at
-{% include icon-github.html username="sfrisk" %} /
+[sfrisk](https://github.com/sfrisk/) /
 [jekyll-comic](https://github.com/sfrisk/jekyll-comic)
